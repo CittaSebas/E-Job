@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Painel Principal</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .lists {
+      display: flex;
+      gap: 20px;
+    }
+    .list {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      width: 45%;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Painel do Administrador</h2>
+      <div>
+        <a href="admin_criar.html"><button>Criar</button></a>
+        <a href="admin_punicoes.html"><button>Punições</button></a>
+      </div>
+    </div>
+
+    <div class="lists">
+      <div class="list">
+        <h3>Vagas em Aberto</h3>
+        <ul>
+          <li>Vaga 1 - Desenvolvedor</li>
+          <li>Vaga 2 - Analista</li>
+          <li>Vaga 3 - Designer</li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <h3>Pagamentos em Aberto</h3>
+        <ul>
+          <li>Empresa X - R$ 1000</li>
+          <li>Empresa Y - R$ 1500</li>
+          <li>Empresa Z - R$ 2000</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

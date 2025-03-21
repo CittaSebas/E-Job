@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Concluir</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .vaga {
+      background-color: #e9ecef;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .horarios {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+      align-items: center;
+    }
+    .horario-item {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .horario-item label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Concluir</h2>
+
+    <div class="vaga">
+      <h3>Vaga: Teste</h3>
+      <div class="horarios">
+        <div class="horario-item">
+          <label for="entrada">Horário Entrada</label>
+          <input type="time" id="entrada">
+        </div>
+        <div class="horario-item">
+          <label for="saida">Horário Saída</label>
+          <input type="time" id="saida">
+        </div>
+      </div>
+      <textarea placeholder="Feedback"></textarea>
+      <button>Enviar</button>
+    </div>
+  </div>
+</body>
+</html>
